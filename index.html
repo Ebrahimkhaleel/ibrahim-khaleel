@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/unicons.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
 
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="css/tooplate-style.css">
@@ -37,14 +39,20 @@
                     <li class="nav-item">
                         <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
                     </li>
-                    <li class="nav-item">
+                   <!--- <li class="nav-item">
                         <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
-                    </li>
+                    </li> --->
                     <li class="nav-item">
                         <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link"><span data-hover="Project Dashboard">Project Dashboard</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link"><span data-hover="Skills">Skills</span></a>
                     </li>
                 </ul>
 
@@ -95,54 +103,77 @@
             </div>
         </div>
     </section>
+    <!-- VIDEO SECTION -->
+<div class="video-section mt-5">
+  <h2 class="text-center">Introduction </h2>
+  <div class="video-container">
+      <video width="100%" controls>
+          <source src="path/to/your/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+  </div>
+</div>
 
-    <!-- PROJECTS -->
-    <section class="project py-5" id="project">
-        <div class="container">
-                
-                <div class="row">
-                  <div class="col-lg-11 text-center mx-auto col-12">
+<style>
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-                      <div class="col-lg-8 mx-auto">
-                        <h2>Projects i have worked on.</h2>
-                      </div>
-
-                      <div class="owl-carousel owl-theme">
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/AYEN 1.jpg" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/DOS 2.jpg" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/project-image03.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="https://drive.google.com/file/d/1E5Lb6fcLsYb3-8vndyt5ghsfDANEOdXE/view?usp=drive_link" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="https://drive.google.com/file/d/1E5Lb6fcLsYb3-8vndyt5ghsfDANEOdXE/view?usp=drive_link" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-                      </div>
-
-                  </div>
-                </div>
+.video-container {
+  width: 50%;
+}
+</style>
+   
+      <!-- Project Box 1 
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="images/project/AYEN 1.jpg" class="card-img-top" alt="AYEN Rebranding">
+          <div class="card-body">
+            <h5 class="card-title">AYEN Rebranding</h5>
+            <p class="card-text">Rebranding logo for AYEN with a modern and sleek design.</p>
+            <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+          </div>
         </div>
-    </section>
+      </div>
+       Project Box 2 
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="images/project/project2.jpg" class="card-img-top" alt="Data Analysis">
+          <div class="card-body">
+            <h5 class="card-title">Data Analysis</h5>
+            <p class="card-text">Comprehensive data analysis for business insights.</p>
+            <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+       Project Box 3 
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+          <img src="images/project/project3.jpg" class="card-img-top" alt="Web Development">
+          <div class="card-body">
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text">Developed a responsive and modern website for a client.</p>
+            <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- Add more project boxes as needed 
+    </div>
+  </div>
+</section>
+
+<!-- Optional: Add some custom CSS for spacing if needed 
+<style>
+.projects .card {
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+.projects .card:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+</style>-->
 
     <!-- FEATURES -->
     <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
@@ -153,6 +184,15 @@
                   <h2 class="mb-4">Experiences</h2>
 
                     <div class="timeline">
+                      <div class="timeline-wrapper">
+                        <div class="timeline-yr">
+                             <span>2025</span>
+                        </div>
+                        <div class="timeline-info">
+                             <h3><span>Data Analysis Intern</span><small>HNG Nigeria. </small></h3>
+                             <p>As an intern, I worked fellow interns to produce dashboards, perform keyword analysis and support other departments in building products.</p>
+                        </div>
+                   </div>
                         <div class="timeline-wrapper">
                              <div class="timeline-yr">
                                   <span>2024</span>
@@ -197,7 +237,7 @@
                 </div>
 
                 <div class="col-lg-6 col-12">
-                  <h2 class="mb-4 mobile-mt-2">Educations</h2>
+                  <h2 class="mb-4 mobile-mt-2">Education</h2>
                   <div class="timeline">
                     <div class="timeline-wrapper">
                          <div class="timeline-yr">
@@ -260,6 +300,129 @@
         </div>
     </section>
 
+    <!-- SKILLS SECTION -->
+<section class="skills py-5" id="skills">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-12 text-center">
+        <h2>My Skills</h2>
+        <p class="text-muted">Key skills as a Data Analyst / Data Scientist</p>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Skill Box 1 -->
+      <div class="col-md-3 mb-4">
+        <div class="card shadow-sm h-100 text-center p-3">
+          <i class="uil uil-chart-line skills-icon" style="font-size:2.5rem;color:#007bff;"></i>
+          <h5 class="mt-3">Data Analysis</h5>
+          <p class="text-muted">Exploratory data analysis, data cleaning, and visualization.</p>
+        </div>
+      </div>
+      <!-- Skill Box 2 -->
+      <div class="col-md-3 mb-4">
+        <div class="card shadow-sm h-100 text-center p-3">
+          <i class="uil uil-brain skills-icon" style="font-size:2.5rem;color:#007bff;"></i>
+          <h5 class="mt-3">Machine Learning</h5>
+          <p class="text-muted">Regression, classification, clustering, and model evaluation.</p>
+        </div>
+      </div>
+      <!-- Skill Box 3 -->
+      <div class="col-md-3 mb-4">
+        <div class="card shadow-sm h-100 text-center p-3">
+          <i class="uil uil-database skills-icon" style="font-size:2.5rem;color:#007bff;"></i>
+          <h5 class="mt-3">SQL & Databases</h5>
+          <p class="text-muted">Data extraction, transformation, and querying with SQL.</p>
+        </div>
+      </div>
+      <!-- Skill Box 4 -->
+      <div class="col-md-3 mb-4">
+        <div class="card shadow-sm h-100 text-center p-3">
+          <i class="uil uil-brackets-curly skills-icon" style="font-size:2.5rem;color:#007bff;"></i>
+          <h5 class="mt-3">Python</h5>
+          <p class="text-muted">Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Jupyter.</p>
+        </div>
+      </div>
+      <!-- Add more skill boxes as needed -->
+    </div>
+  </div>
+</section>
+
+<style>
+.skills .card {
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+.skills .card:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+.skills-icon {
+  margin-bottom: 10px;
+}
+</style>
+
+    <!-- PORTFOLIO SECTION -->
+<section class="portfolio py-5" id="portfolio">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-12 text-center">
+        <h2>Portfolio</h2>
+        <p class="text-muted">Explore my work across different domains</p>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Excel Portfolio -->
+      <div class="col-md-3 mb-4">
+        <div class="card shadow-sm h-100 text-center p-3">
+          <i class="uil uil-file-exclamation skills-icon" style="font-size:2.5rem;color:#217346;"></i>
+          <h5 class="mt-3">Excel</h5>
+          <p class="text-muted">Dashboards, data cleaning, advanced formulas, and automation.</p>
+          <a href="#" class="btn btn-outline-success btn-sm">View Excel Work</a>
+        </div>
+      </div>
+      <!-- Power BI Portfolio -->
+      <div class="col-md-3 mb-4">
+        <div class="card shadow-sm h-100 text-center p-3">
+          <i class="uil uil-chart skills-icon" style="font-size:2.5rem;color:#f2c811;"></i>
+          <h5 class="mt-3">Power BI</h5>
+          <p class="text-muted">Interactive dashboards, data modeling, and business insights.</p>
+          <a href="#" class="btn btn-outline-warning btn-sm">View Power BI Work</a>
+        </div>
+      </div>
+      <!-- Machine Learning Portfolio -->
+      <div class="col-md-3 mb-4">
+        <div class="card shadow-sm h-100 text-center p-3">
+          <i class="uil uil-robot skills-icon" style="font-size:2.5rem;color:#007bff;"></i>
+          <h5 class="mt-3">Machine Learning</h5>
+          <p class="text-muted">Predictive models, classification, regression, and clustering.</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">View ML Projects</a>
+        </div>
+      </div>
+      <!-- Graphic Design Portfolio -->
+      <div class="col-md-3 mb-4">
+        <div class="card shadow-sm h-100 text-center p-3">
+          <i class="uil uil-palette skills-icon" style="font-size:2.5rem;color:#e83e8c;"></i>
+          <h5 class="mt-3">Graphic Design</h5>
+          <p class="text-muted">Branding, logos, posters, and creative visual content.</p>
+          <a href="#" class="btn btn-outline-danger btn-sm">View Designs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.portfolio .card {
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+.portfolio .card:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+.portfolio .skills-icon {
+  margin-bottom: 10px;
+}
+</style>
+
     <!-- CONTACT -->
     <section class="contact py-5" id="contact">
       <div class="container">
@@ -319,7 +482,7 @@
                <div class="row">
 
                     <div class="col-lg-12 col-12">                                
-                        <p class="copyright-text text-center">Copyright &copy; 2024 Kherleelu . All rights reserved</p>
+                        <p class="copyright-text text-center">Copyright &copy; 2025 Kherleelu . All rights reserved</p>
                         <p class="copyright-text text-center">Designed by Kherleelu</p>
                     </div>
                     
